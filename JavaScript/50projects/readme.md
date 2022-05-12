@@ -1,6 +1,6 @@
 # 50 mini projects in HTML, CSS & JavaScript
 
-## projects
+## project list
 
 - Expanding Cards
 
