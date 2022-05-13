@@ -10,11 +10,16 @@ function solution(arr){
 
     for(let i =0; i < n; i++){
         for(let j =0; j < n; j++){
+            let flag = 1;
             for(let k = 0; k < 4; k++){
-                if(arr[i][j] > arr[i + dx[k]][j+ dy[k]]){
-                    
+                let x = i + dx[k];
+                let y = j + dy[k];
+                if(x >= 0 && y >= 0 && x < n && y < n && arr[i][j] <= arr[x][y]){
+                    flag = 0;
+                    break;
                 }
             }
+            if(flag) answer++;
         }
     }
     return answer;
