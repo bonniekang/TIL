@@ -4,7 +4,21 @@
 
 function solution(n, k, card){
     let answer;
-    
+    // Set objects that store unique values of any type
+    let temp = new Set();
+    // 첫번째 카드
+    for(let i=0; i <n; i++){
+        // 두번째 카드
+        for(let j=i+1; j <n; j++){
+            // 세번째 카드
+            for(let k=j+1; k <n; k++){
+                temp.add(card[i] + card[j] + card[k])
+            }
+        }
+    }
+    // 큰 수부터 정렬된 배열
+    let a = Array.from(temp).sort((a, b) => b-a)
+    answer = a[k-1]
     return answer;
 }
 
