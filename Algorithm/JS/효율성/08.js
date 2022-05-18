@@ -37,6 +37,7 @@ function solution(s, t){
         sHash.set(s[left], sHash.get(s[left])-1)
         // 0이면 레터 제거
         if(sHash.get(s[left]) === 0) sHash.delete(s[left])
+        left++
     }
 
     return answer;
