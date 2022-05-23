@@ -9,6 +9,7 @@ function solution(need, plan){
             if(x !== queue.shift()) return "NO";
         }
     }
+    return answer;
 }
 
 let a="CBA";
