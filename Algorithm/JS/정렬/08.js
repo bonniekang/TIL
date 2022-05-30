@@ -8,6 +8,7 @@ function solution(meeting){
         else return a[1] - b[1]
     })
     console.log(meeting)
+    // [ [ 2, 3 ], [ 1, 4 ], [ 3, 5 ], [ 4, 6 ], [ 5, 7 ] ]
     let end = 0;
     for(let x of meeting){
         if(x[0] >= end){
